@@ -58,7 +58,7 @@ export class TemplateCacheDirective<T = unknown> {
       }
     }
   }
-  constructor(templateRef: TemplateRef<any>,
+  constructor(templateRef: TemplateRef<CacheContext<T>>,
               private readonly _viewContainer: ViewContainerRef) {
     this._thenTemplateRef = templateRef
   }
